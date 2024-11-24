@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from staff_hub import views as staff_hub
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', staff_hub.BaseView.as_view(), name='home'),
 ]
