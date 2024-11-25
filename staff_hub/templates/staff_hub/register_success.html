@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container mt-5">
+        <div class="alert alert-success text-center" role="alert">
+            <h4 class="alert-heading">Registration Successful!</h4>
+            <p>You have successfully registered. You can now log in to your account or return to the homepage.</p>
+            <hr>
+            <div class="d-flex justify-content-center gap-3">
+                <a class="btn btn-primary" href="{% url 'home' %}">Go to Homepage</a>
+                <a class="btn btn-success" href="{% url 'login' %}">Log In</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

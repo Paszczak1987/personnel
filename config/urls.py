@@ -22,4 +22,8 @@ from staff_hub import views as staff_hub
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', staff_hub.BaseView.as_view(), name='home'),
+    path('register_user/', staff_hub.RegisterUserView.as_view(), name='register_user'),
+    path('register_success/', staff_hub.RegisterSuccessView.as_view(), name='register_success'),
+    path('login/', staff_hub.LoginView.as_view(), name='login'),
+    path('logout/', staff_hub.LogoutView.as_view(), name='logout'),
 ]
